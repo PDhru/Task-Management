@@ -6,7 +6,7 @@ const Index = () => {
   <div className="container">
     <div className="position-relative">
       <div className="title-one text-center text-lg-start mb-45 xl-mb-30 lg-mb-20 wow fadeInUp" style={{visibility: 'visible', animationName: 'fadeInUp'}}>
-        <h3>Your <span>Tasks <img src="images/shape/title_shape_03.svg" alt className="lazy-img" style={{}} /></span></h3>
+        <h3><span>Tasks <img src="images/shape/title_shape_03.svg" alt className="lazy-img" style={{}} /></span></h3>
         <p className="fs-22 mt-xs">New Tasks &amp; will be available soon.</p>
       </div>
       {/* /.title-one */}

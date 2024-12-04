@@ -5,15 +5,16 @@ const bodyParser = require("body-parser");
 const cors = require("cors");
 const userRoutes  = require('./routes/userRoutes')
 const taskRoutes = require('./routes/taskRoutes')
-
-
+const helmet = require("helmet");
+const dotenv = require("dotenv");
 const app = express();
 
 app.use(cors({
   origin: 'http://localhost:3000',
   credentials: true
 }));
-
+dotenv.config();
+app.use(helmet());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(bodyParser.json()); 
@@ -33,4 +34,4 @@ app.get("/", (req, res) => {
 app.listen(PORT, () => {
   database();
   console.log(`Server is running on localhost:${PORT}`);
-});
+}); 
