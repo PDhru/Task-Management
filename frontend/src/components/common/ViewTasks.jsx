@@ -110,11 +110,11 @@ const ViewTasks = () => {
                     <td>
                       <div className="d-flex justify-content-end">
                         <Link to={`/task/edit/${task._id}`}>
-                          <i className="fa-solid fa-pencil"></i>
+                          <i className="fa-solid fa-pencil pt-3" ></i>
                         </Link>
                         <button
                           onClick={() => deleteTask(task._id)}
-                          className="btn btn-link text-danger ms-3"
+                          className="btn btn-link text-danger"
                         >
                           <i className="fa-solid fa-trash"></i>
                         </button>

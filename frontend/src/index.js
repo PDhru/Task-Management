@@ -68,16 +68,15 @@ const router = createBrowserRouter(
       {/* Protected Routes */}
       {/* <Route path="/" element={<ProtectedRoute><Layout /></ProtectedRoute>}> */}
         {/* <Route index element={<Index />} /> */}
-        <Route path="/create-task" element={<CreateEvent />} />
+        <Route path="/create-task" element={<ProtectedRoute><CreateEvent /></ProtectedRoute>} />
         <Route path="/view-task" element={<ProtectedRoute><ViewTasks /></ProtectedRoute>} />
-        <Route path="/task/edit/:id" element={<EditTask />} />
+        <Route path="/task/edit/:id" element={<ProtectedRoute><EditTask /></ProtectedRoute>} />
       {/* </Route> */}
 
-      {/* Admin-Only Route */}
-      <Route
+      {/* <Route
         path="/admin/view-task"
         element={<ProtectedRoute adminOnly={true}><ViewTasks /></ProtectedRoute>}
-      />
+      /> */}
 
       {/* Fallback Route */}
       <Route path="*" element={<h1>404 - Page Not Found</h1>} />

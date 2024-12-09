@@ -106,7 +106,7 @@ const CreateEvent = () => {
                       <label >Event Type*</label>
                       <select className="nice-select w-100" id="status" name="status" value={taskData.status} onChange={handleChange} required> 
                         <option value="Pending">Pending</option>
-                        <option value="In Progress">In Progress</option>
+                        {/* <option value="In Progress">In Progress</option> */}
                         <option value="Completed">Completed</option>
                       </select>
                     </div>

@@ -161,8 +161,6 @@ const Login = () => {
     const [signupData, setSignupData] = useState({ name: "", email: "", password: "", role: "user" });
     const [message, setMessage] = useState("");
     const navigate = useNavigate();
-
-    // Handle login form submission
     const handleLoginSubmit = async (e) => {
         e.preventDefault();
         try {
